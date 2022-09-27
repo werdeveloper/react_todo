@@ -5,7 +5,7 @@ export default function Todos(props){
     debugger;
     return (
         <div className='container'>
-            <h3 className='text-center my-3'>Todos List</h3>
+            <h3>Todos List</h3>
             {
                 props.todos.length === 0 ? 'No todo list found':
                 props.todos.map((value) => {

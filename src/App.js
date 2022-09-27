@@ -4,6 +4,8 @@ import Todos from './MyComponents/Todos';
 import Footer from './MyComponents/Footer';
 import AddTodo from './MyComponents/AddTodo';
 import About from './MyComponents/About';
+import UseEffect1 from './MyComponents/useEffects/UseEffect1';
+import UseEffect2 from './MyComponents/useEffects/UseEffect2';
 
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -80,6 +82,8 @@ function App() {
 
         <Route exact path="/about" element={<About />} />
         <Route path="*" element={<About />} />
+        <Route path="/UseEffect1" element={<UseEffect1 />} />
+        <Route path="/UseEffect2" element={<UseEffect2 />} />
       </Routes>
       <Footer />
     </Router>
